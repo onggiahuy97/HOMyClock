@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>MyClock.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>0FB95E819623C2D30848FF508F41E5CADBD3655F</string>
+				<key>dateExpires</key>
+				<string>3/5/22</string>
+				<key>type</key>
+				<string>Apple Development</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>B6LXP9JCNK.com.huyong.MyClock</string>
+				<key>com.apple.developer.applesignin</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>com.apple.developer.team-identifier</key>
+				<string>B6LXP9JCNK</string>
+				<key>get-task-allow</key>
+				<true/>
+			</dict>
+			<key>name</key>
+			<string>MyClock.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>24f89162-148c-4db6-a0ed-6ceda74d7100</string>
+				<key>name</key>
+				<string>iOS Team Provisioning Profile: com.huyong.MyClock</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>B6LXP9JCNK</string>
+				<key>name</key>
+				<string>Huy Ong</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
