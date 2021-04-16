@@ -10,25 +10,11 @@ import Combine
 import UIKit
 import SwiftUI
 
-extension Int {
-    func toString() -> String {
-        return "\(self)"
-    }
-}
-
-extension String {
-    static func fromSecondToString(_ time: TimeInterval) -> String {
-        let hours = NSInteger(time) / 3600
-        let minutes = (NSInteger(time) / 60) % 60
-        let string = String(format: "%0.2d:%0.2d", hours, minutes)
-        return string
-    }
-}
-
 class TimerObserver: ObservableObject {
     @Published var hour: Int = 0
     @Published var minute: Int = 0
     @Published var day: String = ""
+    @Published var updateTime: String = "00:00:00"
     @Published var data: [TimeData] = [] {
         didSet {
             max = data.reduce(1.0, { (result, time) in
@@ -37,18 +23,10 @@ class TimerObserver: ObservableObject {
         }
     }
     
-    @Published var updateTime: String = "00:00:00"
     
     let calander = Calendar.current
-    
     var max: CGFloat = 1.0
-    
     var lasTime: Date
-    
-    var todayIndex: Int {
-        WeekDay.getDayIndex()
-    }
-
     var cancellables = Set<AnyCancellable>()
     
     var currentTime: Date = Date() {
