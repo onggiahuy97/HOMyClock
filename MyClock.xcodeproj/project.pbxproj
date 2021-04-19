@@ -9,13 +9,6 @@
 /* Begin PBXBuildFile section */
 		3E359DB3262A2EA300FA3FE9 /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E359DB2262A2EA300FA3FE9 /* Int+Extensions.swift */; };
 		3E359DB6262A2EB100FA3FE9 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E359DB5262A2EB100FA3FE9 /* String+Extensions.swift */; };
-		3E359DBF262A2FA000FA3FE9 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E359DBE262A2FA000FA3FE9 /* WidgetKit.framework */; };
-		3E359DC1262A2FA000FA3FE9 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E359DC0262A2FA000FA3FE9 /* SwiftUI.framework */; };
-		3E359DC4262A2FA000FA3FE9 /* MyClockWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E359DC3262A2FA000FA3FE9 /* MyClockWidget.swift */; };
-		3E359DC6262A2FA100FA3FE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E359DC5262A2FA100FA3FE9 /* Assets.xcassets */; };
-		3E359DCA262A2FA100FA3FE9 /* MyClockWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3E359DBC262A2FA000FA3FE9 /* MyClockWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		3E359DF3262A32CC00FA3FE9 /* PersonalWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E359DF2262A32CC00FA3FE9 /* PersonalWidgetView.swift */; };
-		3E359DF6262A333A00FA3FE9 /* PersonalWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E359DF2262A32CC00FA3FE9 /* PersonalWidgetView.swift */; };
 		3E6BFFC4262791330017CA87 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6BFFC3262791330017CA87 /* View+Extension.swift */; };
 		3EEDF403261F701600C86E14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEDF402261F701600C86E14 /* AppDelegate.swift */; };
 		3EEDF405261F701600C86E14 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEDF404261F701600C86E14 /* SceneDelegate.swift */; };
@@ -32,16 +25,6 @@
 		3EEDF47F2624BC6700C86E14 /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEDF47E2624BC6700C86E14 /* DateFormatter+Extension.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		3E359DC8262A2FA100FA3FE9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3EEDF3F7261F701600C86E14 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3E359DBB262A2FA000FA3FE9;
-			remoteInfo = MyClockWidgetExtension;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		3E359DCE262A2FA100FA3FE9 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -49,7 +32,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				3E359DCA262A2FA100FA3FE9 /* MyClockWidgetExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,13 +41,8 @@
 /* Begin PBXFileReference section */
 		3E359DB2262A2EA300FA3FE9 /* Int+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
 		3E359DB5262A2EB100FA3FE9 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
-		3E359DBC262A2FA000FA3FE9 /* MyClockWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyClockWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E359DBE262A2FA000FA3FE9 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		3E359DC0262A2FA000FA3FE9 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		3E359DC3262A2FA000FA3FE9 /* MyClockWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClockWidget.swift; sourceTree = "<group>"; };
-		3E359DC5262A2FA100FA3FE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3E359DC7262A2FA100FA3FE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3E359DF2262A32CC00FA3FE9 /* PersonalWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalWidgetView.swift; sourceTree = "<group>"; };
 		3E6BFFC3262791330017CA87 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		3EEDF3FF261F701600C86E14 /* MyClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EEDF402261F701600C86E14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,15 +63,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3E359DB9262A2FA000FA3FE9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3E359DC1262A2FA000FA3FE9 /* SwiftUI.framework in Frameworks */,
-				3E359DBF262A2FA000FA3FE9 /* WidgetKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3EEDF3FC261F701600C86E14 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -114,22 +82,10 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3E359DC2262A2FA000FA3FE9 /* MyClockWidget */ = {
-			isa = PBXGroup;
-			children = (
-				3E359DC3262A2FA000FA3FE9 /* MyClockWidget.swift */,
-				3E359DF2262A32CC00FA3FE9 /* PersonalWidgetView.swift */,
-				3E359DC5262A2FA100FA3FE9 /* Assets.xcassets */,
-				3E359DC7262A2FA100FA3FE9 /* Info.plist */,
-			);
-			path = MyClockWidget;
-			sourceTree = "<group>";
-		};
 		3EEDF3F6261F701600C86E14 = {
 			isa = PBXGroup;
 			children = (
 				3EEDF401261F701600C86E14 /* MyClock */,
-				3E359DC2262A2FA000FA3FE9 /* MyClockWidget */,
 				3E359DBD262A2FA000FA3FE9 /* Frameworks */,
 				3EEDF400261F701600C86E14 /* Products */,
 			);
@@ -139,7 +95,6 @@
 			isa = PBXGroup;
 			children = (
 				3EEDF3FF261F701600C86E14 /* MyClock.app */,
-				3E359DBC262A2FA000FA3FE9 /* MyClockWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -196,23 +151,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3E359DBB262A2FA000FA3FE9 /* MyClockWidgetExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3E359DCB262A2FA100FA3FE9 /* Build configuration list for PBXNativeTarget "MyClockWidgetExtension" */;
-			buildPhases = (
-				3E359DB8262A2FA000FA3FE9 /* Sources */,
-				3E359DB9262A2FA000FA3FE9 /* Frameworks */,
-				3E359DBA262A2FA000FA3FE9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = MyClockWidgetExtension;
-			productName = MyClockWidgetExtension;
-			productReference = 3E359DBC262A2FA000FA3FE9 /* MyClockWidgetExtension.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 		3EEDF3FE261F701600C86E14 /* MyClock */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3EEDF413261F701900C86E14 /* Build configuration list for PBXNativeTarget "MyClock" */;
@@ -225,7 +163,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				3E359DC9262A2FA100FA3FE9 /* PBXTargetDependency */,
 			);
 			name = MyClock;
 			productName = MyClock;
@@ -241,9 +178,6 @@
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
-					3E359DBB262A2FA000FA3FE9 = {
-						CreatedOnToolsVersion = 12.4;
-					};
 					3EEDF3FE261F701600C86E14 = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -263,20 +197,11 @@
 			projectRoot = "";
 			targets = (
 				3EEDF3FE261F701600C86E14 /* MyClock */,
-				3E359DBB262A2FA000FA3FE9 /* MyClockWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3E359DBA262A2FA000FA3FE9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3E359DC6262A2FA100FA3FE9 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3EEDF3FD261F701600C86E14 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -290,15 +215,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3E359DB8262A2FA000FA3FE9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3E359DF6262A333A00FA3FE9 /* PersonalWidgetView.swift in Sources */,
-				3E359DC4262A2FA000FA3FE9 /* MyClockWidget.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3EEDF3FB261F701600C86E14 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -315,20 +231,11 @@
 				3EEDF41D261F806900C86E14 /* OrientationInfo.swift in Sources */,
 				3E359DB3262A2EA300FA3FE9 /* Int+Extensions.swift in Sources */,
 				3E6BFFC4262791330017CA87 /* View+Extension.swift in Sources */,
-				3E359DF3262A32CC00FA3FE9 /* PersonalWidgetView.swift in Sources */,
 				3EEDF423261F81ED00C86E14 /* ClockView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		3E359DC9262A2FA100FA3FE9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3E359DBB262A2FA000FA3FE9 /* MyClockWidgetExtension */;
-			targetProxy = 3E359DC8262A2FA100FA3FE9 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3EEDF40D261F701900C86E14 /* LaunchScreen.storyboard */ = {
@@ -342,48 +249,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		3E359DCC262A2FA100FA3FE9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B6LXP9JCNK;
-				INFOPLIST_FILE = MyClockWidget/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.huyong.MyClock.MyClockWidget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		3E359DCD262A2FA100FA3FE9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B6LXP9JCNK;
-				INFOPLIST_FILE = MyClockWidget/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.huyong.MyClock.MyClockWidget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		3EEDF411261F701900C86E14 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -517,7 +382,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.5;
+				MARKETING_VERSION = 1.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.huyong.MyClock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -542,7 +407,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.5;
+				MARKETING_VERSION = 1.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.huyong.MyClock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -553,15 +418,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3E359DCB262A2FA100FA3FE9 /* Build configuration list for PBXNativeTarget "MyClockWidgetExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3E359DCC262A2FA100FA3FE9 /* Debug */,
-				3E359DCD262A2FA100FA3FE9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		3EEDF3FA261F701600C86E14 /* Build configuration list for PBXProject "MyClock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

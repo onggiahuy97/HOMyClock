@@ -39,6 +39,7 @@ class TimerObserver: ObservableObject {
     
     init() {
         lasTime = Date()
+        shouldResetData()
         loadDataUpdates()
         
         Timer.publish(every: 1.0, on: .main, in: .common)

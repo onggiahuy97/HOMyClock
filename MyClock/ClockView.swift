@@ -37,12 +37,14 @@ struct ClockView: View {
     func toPortraitView(_ geo: GeometryProxy) -> some View {
         let width = geo.size.width
         let textSize = width / 2.2
+        let dayFont = Font.system(size: 25, weight: .bold, design: .serif)
+        let hourMinuteFont = Font.system(size: textSize, weight: .bold, design: .serif)
         return VStack(spacing: 25) {
             ZStack(alignment: .topLeading) {
                 Text(model.day)
-                    .font(.system(size: 25, weight: .bold, design: .serif))
+                    .font(dayFont)
                 Text(model.hour.toString())
-                    .font(.system(size: textSize, weight: .bold, design: .serif))
+                    .font(hourMinuteFont)
             }
             VStack(spacing: 10) {
                 Circle()
@@ -51,7 +53,7 @@ struct ClockView: View {
             .frame(width: 50, height: 50)
             .foregroundColor(.white)
             Text(model.minute.toString())
-                .font(.system(size: textSize, weight: .bold, design: .serif))
+                .font(hourMinuteFont)
         }
     }
     
@@ -59,12 +61,14 @@ struct ClockView: View {
         let width = geo.size.height
         let size = width / 2
         let textSize = size / 1.4
+        let dayFont = Font.system(size: 20, weight: .bold, design: .serif)
+        let hourMinuteFont = Font.system(size: textSize, weight: .bold, design: .serif)
         return HStack(spacing: 25) {
             ZStack(alignment: .topLeading) {
                 Text(model.day)
-                    .font(.system(size: 20, weight: .bold, design: .serif))
+                    .font(dayFont)
                 Text(model.hour.toString())
-                    .font(.system(size: textSize, weight: .bold, design: .serif))
+                    .font(hourMinuteFont)
             }
             .frame(width: size)
             
@@ -76,7 +80,7 @@ struct ClockView: View {
             .foregroundColor(.white)
             
             Text(model.minute.toString())
-                .font(.system(size: textSize, weight: .bold, design: .serif))
+                .font(hourMinuteFont)
                 .frame(width: size)
 
         }

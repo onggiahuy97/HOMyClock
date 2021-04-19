@@ -21,14 +21,25 @@ struct PersonalView: View {
             GeometryReader { geo in
                 HStack(alignment: .bottom, spacing: 3) {
                     ForEach(model.data, id: \.self) { value in
+                        let maxCellHeight = geo.size.height/1.5
+                        let cellHeight = geo.size.height/1.5 * CGFloat(value.duration) / model.max
+                        let cellColor = WeekDay.isToday(value.day) ? .white : Color.white.opacity(0.65)
+                        let cellOpacity = Double(value.duration < 60 ? 0 : 1)
                         VStack {
                             VStack(spacing: 5) {
                                 Text(String.fromSecondToString(value.duration))
                                     .font(.footnote)
-                                Capsule(style: .circular)
-                                    .frame(width: 35, height: geo.size.height/1.5 * CGFloat(value.duration) / model.max)
+                                ZStack(alignment: .bottom) {
+                                    Capsule()
+                                        .frame(width: 35, height: maxCellHeight)
+                                        .opacity(0)
+                                    Capsule(style: .circular)
+                                        .frame(width: 35, height: cellHeight)
+                                    
+                                }
                             }
-                            .opacity(value.duration < 60 ? 0 : 1)
+                            .opacity(cellOpacity)
+                            
                             
                             Text(value.day.description)
                                 .padding(5)
@@ -39,7 +50,7 @@ struct PersonalView: View {
                                 )
                         }
                         .frame(maxWidth: .infinity)
-                        .foregroundColor(WeekDay.isToday(value.day) ? .white : Color.white.opacity(0.65))
+                        .foregroundColor(cellColor)
                     }
                 }
             }
